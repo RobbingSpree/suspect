@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00428da0-d037-4aa1-a50e-a97d0e4399d3",
+            "Value": {
+                "id": "b747ec8a-4217-4dc7-b47b-fc157d0b6873",
+                "resourcePath": "views\\00428da0-d037-4aa1-a50e-a97d0e4399d3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "062fbfae-e119-437f-aa70-b146fc0625f4",
             "Value": {
                 "id": "1e60afc4-a39c-4513-b4eb-49082074e5a5",
@@ -172,6 +180,14 @@
                 "id": "a408d47a-ce77-416d-a496-141238e3050d",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4d5ed76d-7d41-4cbc-8481-b8f4683a8a71",
+            "Value": {
+                "id": "e012a355-8936-422d-be3c-2c0c3718484d",
+                "resourcePath": "sprites\\warrior\\warrior.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -359,6 +375,14 @@
             }
         },
         {
+            "Key": "9b36bd69-c554-4e63-bd1d-5a6a5b582155",
+            "Value": {
+                "id": "321c1f3b-a8cf-4cb6-87f2-c8e6bd9368f6",
+                "resourcePath": "sprites\\theif\\theif.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9e44bf35-cbb6-4c72-bceb-b53e9b4139d0",
             "Value": {
                 "id": "dbef77b2-1370-405b-aa3a-a2567dd5b5a3",
@@ -388,6 +412,14 @@
                 "id": "281ac8ff-ace3-4f4a-a8f8-4d4905858720",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b9f14fc4-7c72-4e6b-970d-a1b3e5192a89",
+            "Value": {
+                "id": "fb9d8bee-33b1-4ced-a91f-489517feae37",
+                "resourcePath": "sprites\\theif_walk\\theif_walk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
