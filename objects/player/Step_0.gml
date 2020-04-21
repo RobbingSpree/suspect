@@ -7,6 +7,13 @@ var down = keyboard_check(vk_down);
 var change = keyboard_check_released(vk_shift);
 var debug = keyboard_check_released(vk_escape);
 
+var input_h = right-left;
+var input_v = down-up;
+
+dpad_dir = point_distance(0,0,input_h,input_v) > 0 ? point_direction(0,0,input_h,input_v) : no_direction;
+
+movement_and_collision(dpad_dir,mv_spd,wall_obj);
+
 //debug
 if debug
 	room_restart();
@@ -14,7 +21,8 @@ if debug
 //sprite update
 var spr_x = right - left;
 var spr_y = down - up;
-
+update_sprite_facing();
+/*
 if spr_x !=0 || spr_y !=0 //did you press a direction button this frame
 {
 	facing = 4+2*spr_y;
@@ -30,16 +38,8 @@ if spr_x !=0 || spr_y !=0 //did you press a direction button this frame
 	sprite_index = hunam_spr;
 	image_index = facing;
 }
-
-//movement
-var xp = x+(right - left)*mv_spd;
-var yp = y+(down - up)*mv_spd;
-if !collision_point(xp,yp,wall_obj,true,true)
-{
-	x=xp;
-	y=yp;
-}
-
+*/
+//udate stealth values
 hiding = false;
 if place_meeting(x,y,changeroom)
 {

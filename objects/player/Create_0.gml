@@ -8,6 +8,7 @@ image_xscale = 2;
 image_yscale = 2;
 ani = 0;
 facing = 0;
+dpad_dir=no_direction;
 
 emotion = "Ambivalent";
 strength = 0;
