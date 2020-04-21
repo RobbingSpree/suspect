@@ -6,7 +6,8 @@
     "children": [
         "9b36bd69-c554-4e63-bd1d-5a6a5b582155",
         "b9f14fc4-7c72-4e6b-970d-a1b3e5192a89",
-        "4d5ed76d-7d41-4cbc-8481-b8f4683a8a71"
+        "4d5ed76d-7d41-4cbc-8481-b8f4683a8a71",
+        "a0966f48-5ceb-4ed5-87b2-31b5728b7145"
     ],
     "filterType": "GMSprite",
     "folderName": "disgaea imports",
