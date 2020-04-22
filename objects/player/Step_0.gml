@@ -19,26 +19,8 @@ if debug
 	room_restart();
 
 //sprite update
-var spr_x = right - left;
-var spr_y = down - up;
 update_sprite_facing();
-/*
-if spr_x !=0 || spr_y !=0 //did you press a direction button this frame
-{
-	facing = 4+2*spr_y;
-	if facing == 4 && spr_x > 0
-		facing = 0; //don't ask how, this just works
-	if spr_x !=0 && spr_y !=0
-		facing += spr_x*spr_y;
-	sprite_index = return_move_spr(facing);
-	image_index = ani;
-	ani+=0.3;
-} else if spr_x ==0 && spr_y ==0 {
-	ani =0;
-	sprite_index = hunam_spr;
-	image_index = facing;
-}
-*/
+
 //udate stealth values
 hiding = false;
 if place_meeting(x,y,changeroom)

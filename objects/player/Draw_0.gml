@@ -11,36 +11,26 @@ var str = "Top emotion: " + string(emotion);
 draw_text(UIx+20,UIy+210,str);
 draw_text(UIx+30,UIy+230,strength);
 
-//draw_graph
+//draw graph
 var px = UIx+45;
 var py = UIy+170;
-var xunit = 13;
-var yunit = 8;
+var xunit = 20;
+var yunit = 20;
 
-//draw_outline
-draw_primitive_begin(pr_trianglefan);
+//draw outline
+draw_primitive_begin(pr_trianglelist);
 var _col = c_white;
-draw_vertex_color(px,py,_col,1);
-draw_vertex_color(px,py-5*yunit,_col,1);
-draw_vertex_color(px-3*xunit,py-1*yunit,_col,1);
-draw_vertex_color(px-2*xunit,py+4*yunit,_col,1);
-draw_vertex_color(px+2*xunit,py+4*yunit,_col,1);
-draw_vertex_color(px+3*xunit,py-1*yunit,_col,1);
-draw_vertex_color(px,py-5*yunit,_col,1);
-draw_vertex_color(px,py,_col,1);
+draw_vertex_color(px,py-2*yunit,_col,1);
+draw_vertex_color(px-2*xunit,py+yunit,_col,1);
+draw_vertex_color(px+2*xunit,py+yunit,_col,1);
 draw_primitive_end();
 
-//draw_current stats
-draw_primitive_begin(pr_trianglefan);
+//draw current values
+draw_primitive_begin(pr_trianglelist);
 var _col = c_red;
-draw_vertex_color(px,py,_col,1);
-draw_vertex_color(px,py-(5*yunit/10*attention),_col,1);
-draw_vertex_color(px-(3*xunit/10*anxiety),py-(1*yunit/10*anxiety),_col,1);
-draw_vertex_color(px-(2*xunit/10*excitement),py+(4*yunit/10*excitement),_col,1);
-draw_vertex_color(px+(2*xunit/10*fear),py+(4*yunit/10*fear),_col,1);
-draw_vertex_color(px+(3*xunit/10*determination),py-(1*yunit/10*determination),_col,1);
-draw_vertex_color(px,py-(5*yunit/10*attention),_col,1);
-draw_vertex_color(px,py,_col,1);
+draw_vertex_color(px,py-(2*yunit/10*excitement),_col,1);
+draw_vertex_color(px-(2*xunit/10*arousal),py+(yunit/10*arousal),_col,1);
+draw_vertex_color(px+(2*xunit/10*anxiety),py+(yunit/10*anxiety),_col,1);
 draw_primitive_end();
 
 //draw overlay
@@ -48,5 +38,6 @@ draw_unit_markings(px,py,xunit,yunit);
 
 //draw center point
 draw_set_color(c_black);
-draw_circle(px-1,py,4,false);
+draw_circle(px-1,py,2,false);
 draw_set_color(c_white);
+

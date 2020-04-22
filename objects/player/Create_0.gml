@@ -17,11 +17,13 @@ update_cycle = 0;
 update_index = 20;
 //emotion stats
 randomize();
-attention = irandom_range(1,10);
-anxiety = irandom_range(1,10);
-excitement  = irandom_range(1,10);
-fear = irandom_range(1,10);
-determination = irandom_range(1,10);
+var max_stat = 5;
+attention = irandom_range(1,max_stat);
+anxiety = irandom_range(1,max_stat);
+arousal = irandom_range(1,max_stat);
+excitement  = irandom_range(1,max_stat);
+fear = irandom_range(1,max_stat);
+determination = irandom_range(1,max_stat);
 
 eyes_on = 0;
 watched_by = [];
